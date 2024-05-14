@@ -1,0 +1,57 @@
+.wrapper {
+  height: auto;
+  min-height: 100vh;
+  width: auto;
+  background-color: #9e0d5ac0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  grid-template-columns: 30% 30% 30%;
+}
+.holder {
+  width: auto;
+  height: auto;
+  display: grid;
+
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 15rem;
+  height: 20rem;
+  background-color: #ac0a56d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2rem;
+}
+.heading {
+  padding-bottom: 4rem;
+  font-family: cursive;
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.name {
+  font-family: cursive;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.image {
+  height: 11rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.role {
+  font-size: 18px;
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}

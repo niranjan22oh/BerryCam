@@ -1,0 +1,52 @@
+.bg {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  background-color: #6d063d !important;
+}
+.video {
+  margin: auto;
+  width: 373px;
+  height: 594px;
+}
+.container {
+  width: 26rem;
+  height: 26rem;
+  margin-bottom: 3rem;
+  background-color: #ea609e;
+  border-radius: 2px;
+  border: 4px solid rgb(227, 52, 81);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.headings {
+  margin-top: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  color:white;
+  font-size: 5rem;
+  font-family: cursive;
+  font-weight: bold;
+}
+.Desc {
+  color: white !important;
+  font-weight: 600;
+  font-size: 20px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.btn {
+  margin-top: 24px;
+  width: 14rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.btn :hover {
+  background-color: #ea609e;
+}

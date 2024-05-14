@@ -1,0 +1,81 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9e0039; /* Raspberry red background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+
+.splash-screen.active {
+  opacity: 1;
+}
+
+.logo-container {
+  position: relative; /* Position relative to place the rotating circle */
+  width: 30rem; /* Adjust the size of the logo container as needed */
+  height: 30rem;
+  border-radius: 50%;
+  background-color: #9c033b; /* White circular background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50rem; /* Adjust the size of the logo as needed */
+  height: 30rem;
+}
+
+
+
+.ripple {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 4px solid#e10355; /* White border color */
+  animation: ripple-effect 2s linear infinite;
+}
+
+.ripple.delay {
+  animation-delay: 0.5s; /* Delay the start of the ripple animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ripple-effect {
+  0% {
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+  }
+  100% {
+    width: 150rem; /* Adjust the size of the ripples as needed */
+    height: 150rem;
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  
+  color: #ffffff; /* White font color */
+  font-weight: bold; /* Bold font weight */
+  font-family: 'Arial', sans-serif; /* Add your funky font here */
+}
